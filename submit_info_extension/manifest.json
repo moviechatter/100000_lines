@@ -3,6 +3,9 @@
   "name": "URL Submit",
   "description": "Base Level Extension",
   "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
   "action": {
     "default_popup": "sleep_state.html",
     "default_icon": "sleeping_state.png"
