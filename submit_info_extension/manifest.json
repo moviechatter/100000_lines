@@ -8,23 +8,19 @@
     "activeTab"
   ],
   "action": {
-    "default_icon": "sleeping_state.png"
+    "default_icon": "./images/sleeping_state.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "./scripts/background.js"
   },
-  "content_scripts": [
-    {
-        "matches": [
-            "<all_urls>"
-        ],
-        "js": ["content.js"],
-        "run_at": "document_end"
-    }
-  ],
   "web_accessible_resources": [
     {
-      "resources": ["index_state.html", "sleep_state.html"],
+      "resources": [
+        "./html/*",
+        "./scripts/*",
+        "./css/*",
+        "./images/*"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
