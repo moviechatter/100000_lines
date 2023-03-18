@@ -1,4 +1,4 @@
-const domains = ['target.com', 'amazon.com'];
+const domains = ['target.com', 'amazon.com', '88rising.com'];
 
 // // In case something breaks later, you can always use this to make just the new tabs work :)
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
